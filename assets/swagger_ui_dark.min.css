@@ -10257,9 +10257,14 @@ body a:hover {
   border-color: var(--red)
 }
 
+.swagger-ui .opblock-control-arrow {
+  background: none;
+  border: none
+}
+
 .swagger-ui .copy-to-clipboard {
   align-items: center;
-  background: #7d8293;
+  background: none;
   border: none;
   border-radius: 4px;
   bottom: 10px;
@@ -10267,7 +10272,7 @@ body a:hover {
   height: 30px;
   justify-content: center;
   position: absolute;
-  right: 100px;
+  right: 30px;
   width: 30px
 }
 
