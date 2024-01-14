@@ -148,7 +148,12 @@ body a:hover {
 }
 
 .swagger-ui svg.arrow {
-  fill: var(--black);
+  fill: var(--blue);
+}
+
+.arrow {
+  top: 2px;
+  position: relative;
 }
 
 .swagger-ui svg:not(:root) {
@@ -9467,8 +9472,8 @@ body a:hover {
   color: var(--text-color);
   display: flex;
   font-family: monospace;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 1000;
   padding: 0 10px;
   word-break: break-word
 }
@@ -9498,8 +9503,9 @@ body a:hover {
 .swagger-ui .opblock .opblock-summary-description {
   color: var(--text-color);
   flex: 1 1 auto;
-  font-family: sans-serif;
-  font-size: 13px;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 700;
   word-break: break-word
 }
 
@@ -10218,7 +10224,7 @@ body a:hover {
 .swagger-ui .model-box-control:focus,
 .swagger-ui .models-control:focus,
 .swagger-ui .opblock-summary-control:focus {
-  outline: auto
+  outline: none
 }
 
 .swagger-ui .expand-methods,
@@ -10259,7 +10265,8 @@ body a:hover {
 
 .swagger-ui .opblock-control-arrow {
   background: none;
-  border: none
+  border: none;
+  top: 10px
 }
 
 .swagger-ui .copy-to-clipboard {
@@ -10272,8 +10279,8 @@ body a:hover {
   height: 30px;
   justify-content: center;
   position: absolute;
-  right: 30px;
-  width: 30px
+  right: 4px;
+  width: 30px;
 }
 
 .swagger-ui .copy-to-clipboard button {
@@ -10299,11 +10306,11 @@ body a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: #f7f7f7 url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13.418 7.859a.695.695 0 0 1 .978 0 .68.68 0 0 1 0 .969l-3.908 3.83a.697.697 0 0 1-.979 0l-3.908-3.83a.68.68 0 0 1 0-.969.695.695 0 0 1 .978 0L10 11l3.418-3.141z"/></svg>') right 10px center no-repeat;
+  background: #000 url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13.418 7.859a.695.695 0 0 1 .978 0 .68.68 0 0 1 0 .969l-3.908 3.83a.697.697 0 0 1-.979 0l-3.908-3.83a.68.68 0 0 1 0-.969.695.695 0 0 1 .978 0L10 11l3.418-3.141z"/></svg>') right 10px center no-repeat;
   background-size: 20px;
   border: 2px solid #41444e;
   border-radius: 4px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 1px 2px 0 rgba(247, 247, 247, 0.15);
   color: var(--text-color);
   font-family: sans-serif;
   font-size: 14px;
@@ -10359,12 +10366,13 @@ body a:hover {
 .swagger-ui input[type=search],
 .swagger-ui input[type=text],
 .swagger-ui textarea {
-  background: #fff;
-  border: 1px solid #d9d9d9;
+  background: #000;
+  border: 1px solid #3c3c3c;
   border-radius: 4px;
   margin: 5px 0;
   min-width: 100px;
-  padding: 8px 10px
+  padding: 8px 10px;
+  color: #fff
 }
 
 .swagger-ui input[type=email].invalid,
@@ -10382,8 +10390,8 @@ body a:hover {
 .swagger-ui input[disabled],
 .swagger-ui select[disabled],
 .swagger-ui textarea[disabled] {
-  background-color: #fafafa;
-  color: #888;
+  background-color: #000;
+  color: #4d4d4d;
   cursor: not-allowed
 }
 
